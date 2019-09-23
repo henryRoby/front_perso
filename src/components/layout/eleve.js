@@ -15,7 +15,7 @@ export default class PropAtelier extends Component {
     
 
     componentDidMount() {
-        axios.get(`http://localhost:8080/api/users/newEleve`)
+        axios.get(`https://perso-back.herokuapp.com/api/users/newEleve`)
             .then(response => {
                 console.log('user-article ==== ', response.data)
                 this.setState({ profil: response.data });
@@ -39,7 +39,7 @@ export default class PropAtelier extends Component {
 
                         return <div key={obj._id} className="item col-xs-3 col-lg-3" id="suivi">
                             <center >
-                                <img width="290px" height="220px" src={'http://localhost:8080/api/users/newEleveImage/' + obj.image} alt="pdp" /><br/><br/>
+                                <img width="290px" height="220px" src={'https://perso-back.herokuapp.com/api/users/newEleveImage/' + obj.image} alt="pdp" /><br/><br/>
                                    <label><strong>Nom</strong></label>:&nbsp;{obj.nom}<br/>
                                    <label><strong>Prenom</strong> </label>:&nbsp;{obj.prenom}<br/>
                                     <label><strong>Age</strong> </label>:&nbsp;{obj.age}<br/>

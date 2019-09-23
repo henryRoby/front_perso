@@ -32,7 +32,7 @@ handleUploadImage(ev) {
   data.append('age', this.state.age);
   data.append('sexe', this.state.sexe)
 
-  fetch('http://localhost:8080/api/users/putEleve/'+ this.props.match.params.id, {
+  fetch('https://perso-back.herokuapp.com/api/users/putEleve/'+ this.props.match.params.id, {
     method: 'PUT',
     body: data,
   }).then((response) => {
@@ -41,7 +41,7 @@ handleUploadImage(ev) {
       
       
     response.json().then((body) => {
-      this.setState({ image: `http://localhost:8080/api/users/newEleve/${body.image}` });
+      this.setState({ image: `https://perso-back.herokuapp.com/api/users/newEleve/${body.image}` });
       console.log('ity ilay body.image', body.image);
 
     });

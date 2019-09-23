@@ -29,7 +29,7 @@ handleUploadImage(ev) {
   data.append('idUser', localStorage.id);
   data.append('description', this.state.description)
 
-  fetch('http://localhost:8080/api/users/putArticle/'+ this.props.match.params.id, {
+  fetch('https://perso-back.herokuapp.com/api/users/putArticle/'+ this.props.match.params.id, {
     method: 'PUT',
     body: data,
   }).then((response) => {
@@ -38,7 +38,7 @@ handleUploadImage(ev) {
       
       
     response.json().then((body) => {
-      this.setState({ image: `http://localhost:8080/api/users/newArticle/${body.image}` });
+      this.setState({ image: `https://perso-back.herokuapp.com/api/users/newArticle/${body.image}` });
       console.log('ity ilay body.image', body.image);
 
     });

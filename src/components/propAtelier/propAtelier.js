@@ -16,7 +16,7 @@ export default class PropAtelier extends Component {
     
 
     componentDidMount() {
-        axios.get(`http://localhost:8080/api/users/newArticle/${localStorage.id}`)
+        axios.get(`https://perso-back.herokuapp.com/api/users/newArticle/${localStorage.id}`)
             .then(response => {
                 console.log('user-article ==== ', response)
                 this.setState({ profil: response.data });
@@ -49,7 +49,7 @@ export default class PropAtelier extends Component {
                             <td>{obj.titre}</td>
                             <td id="des">{obj.description}</td>
                             <td>
-                                <img width="150px" height="50px" src={'http://localhost:8080/api/users/newArticleImage/' + obj.image} alt="pdp" />
+                                <img width="150px" height="50px" src={'https://perso-back.herokuapp.com/api/users/newArticleImage/' + obj.image} alt="pdp" />
                             </td>
                             <td>{obj.debut} </td>
                             <td>{obj.date}</td>
@@ -58,7 +58,7 @@ export default class PropAtelier extends Component {
                               
                                      <button  class="btn btn-danger" onClick={(e)=>{
                                     //e.preventefault()
-                                    axios.delete("http://localhost:8080/api/users/delete/"+ obj._id)
+                                    axios.delete("https://perso-back.herokuapp.com/api/users/delete/"+ obj._id)
                                     .then(
                                         console.log("suppression avec succes"),
                                         console.log(obj._id)
@@ -68,8 +68,8 @@ export default class PropAtelier extends Component {
 
                             {obj.visib == true ? (<button  class="btn btn-success" onClick={(e) => {
                                 e.preventDefault()
-                                axios.get(" http://localhost:8080/api/users/cacherAtl/" + obj._id).then(res => {
-                                    axios.get('http://localhost:8080/api/users/newArticle/' + localStorage.id).then(res => {
+                                axios.get(" https://perso-back.herokuapp.com/api/users/cacherAtl/" + obj._id).then(res => {
+                                    axios.get('https://perso-back.herokuapp.com/api/users/newArticle/' + localStorage.id).then(res => {
                                         console.log(res.data)
                                         this.setState({ profil: res.data })
                                     })
@@ -80,8 +80,8 @@ export default class PropAtelier extends Component {
                             }}>Activer</button>) : (<button   class="btn btn-warning" onClick={(e) => {
                                 e.preventDefault()
                                 console.log(obj._id)
-                                axios.get("http://localhost:8080/api/users/affichAtl/" + obj._id).then(res => {
-                                    axios.get('http://localhost:8080/api/users/newArticle/' + localStorage.getItem('id')).then(res => {
+                                axios.get("https://perso-back.herokuapp.com/api/users/affichAtl/" + obj._id).then(res => {
+                                    axios.get('https://perso-back.herokuapp.com/api/users/newArticle/' + localStorage.getItem('id')).then(res => {
                                         console.log(res.data)
                                         this.setState({ profil: res.data })
                                     })

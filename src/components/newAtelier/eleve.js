@@ -34,12 +34,12 @@ handleUploadImage(ev) {
   data.append('classe', this.state.classe);
 
   
-  fetch('http://localhost:8080/api/users/newEleve/',{
+  fetch('https://perso-back.herokuapp.com/api/users/newEleve/',{
     method: 'POST',
     body: data,
   }).then((response) => {
     response.json().then((body) => {
-      this.setState({ image: `http://localhost:8080/api/users/newEleve/${body.image}`});
+      this.setState({ image: `https://perso-back.herokuapp.com/api/users/newEleve/${body.image}`});
       console.log('ity ilay body.image', body.image);
 
     });

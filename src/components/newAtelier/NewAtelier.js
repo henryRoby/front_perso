@@ -31,12 +31,12 @@ handleUploadImage(ev) {
   data.append('idUser', localStorage.id);
   data.append('debut', this.state.debut);
   
-  fetch('http://localhost:8080/api/users/newArticle/', {
+  fetch('https://perso-back.herokuapp.com/api/users/newArticle/', {
     method: 'POST',
     body: data,
   }).then((response) => {
     response.json().then((body) => {
-      this.setState({ image: `http://localhost:8080/api/users/newArticle/${body.image}` });
+      this.setState({ image: `https://perso-back.herokuapp.com/api/users/newArticle/${body.image}` });
       console.log('ity ilay body.image', body.image);
 
     });
