@@ -28,7 +28,6 @@ class Landing extends Component {
                    de l’ONG Zazakely – Enfants de Madagascar depuis sa création.
                  </p>
 
-
                  <p>
                   Notre but est de les sauver d’un destin tragique sans les éloigner de leurs familles.
                    Nous les protégeons et les accompagnons afin que leur enfance et leur adolescence soit à la fois épanouies et constructives. 
@@ -238,8 +237,6 @@ class Landing extends Component {
                         </div>
                     </div>
                  </div>
-
-
 
               </div>
           </div>
