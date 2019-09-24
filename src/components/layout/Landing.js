@@ -5,9 +5,13 @@ import React, { Component } from "react";
 class Landing extends Component {
   render() {
     return (
-      <div id="allAccueil">
+      <div  id="allAccueil" className="container-fluid">
 
-      <div id="titre" className="container-fluid"> <h1>Les enfants en tutelle</h1> </div>
+      <div id="titre" className="container-fluid">
+       <center> 
+          <h1>Les enfants en tutelle</h1>
+        </center>
+       </div>
 
       <div  className="container" >
            <div className="row">

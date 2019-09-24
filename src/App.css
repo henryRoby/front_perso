@@ -16,7 +16,7 @@
 }
 #navbar{
     height: 20%;
-    background-color: black !important;
+    background-color: #3b465e  !important;
 }
 
 
@@ -82,7 +82,7 @@
 
 
 #fotera{
-   background-color: black;
+   background-color: #3b465e ;
 }
 
 
@@ -102,8 +102,7 @@
 
 
 #barakely{
-   border: 1px  solid black;
-   border-radius: 5px;
+   border-left: solid;
 }
 
 
@@ -151,21 +150,25 @@ margin-right:80px;
 
 
 #titre{
+  padding-top: 20px;
+  font-style: italic;
   background:turquoise!important;
-  margin-top:100px !important;
+}
+
+#sild{
+margin-top:5px !important;
 }
 
 
-#allAccueil{
+/*#allAccueil{
  background: lavender; 
-}
+}*/
 
 #hautList{
-  background:green !important;
-  margin-top:100px !important;
+  background:lavender!important;
   width:auto;
-  height: 30px;
+  height:50px;
   padding:auto;
-  border-radius: 10px;
+  padding-top: 20px;
   margin-bottom: 10px;
 }
