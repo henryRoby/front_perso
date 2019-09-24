@@ -27,14 +27,14 @@ export default class Menu extends Component {
 
           const data = [
       { 'id': '1', 'src': 'https://p1.storage.canalblog.com/17/01/421949/106978478_o.jpg' },
-      
       { 'id': '3', 'src': 'https://p0.storage.canalblog.com/02/68/421949/115806549_o.jpeg' },
       { 'id': '4', 'src': 'https://i.ytimg.com/vi/DxUi8I5aSgc/maxresdefault.jpg' },
       { 'id': '5', 'src': 'https://s3-eu-west-1.amazonaws.com/com.okpal.media/o/7/qpm6G-89739663-o.jpg' }
-    ];
+          ];
         
         return (
             <div>
+             <div className="container-fluid">
                 <MDBNavbar  dark expand="md" id="navbar">
                     <MDBNavbarBrand>
                         <div id="contentlogo"><img src="" alt="logo" id="logo" /></div>
@@ -70,10 +70,14 @@ export default class Menu extends Component {
                         </MDBNavbarNav>
                     </MDBCollapse>
                 </MDBNavbar>
+                </div> 
 
+              <div id="sild" className="container">
                  <div className="slide">
                       <SwiftSlider data={data} />
                   </div>
+              </div>
+
             </div>
         );
     }

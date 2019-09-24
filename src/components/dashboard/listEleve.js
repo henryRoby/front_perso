@@ -29,7 +29,7 @@ export default class PropAtelier extends Component {
     liste() {
         return <div id="eleve">
         
-        <div className="" >
+        <div className="container-fluid" >
             
             <div className="row view-group">
                 {

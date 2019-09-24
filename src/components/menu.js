@@ -23,8 +23,8 @@ export default class Menu extends Component {
     }
     render() {
         return (
-            <div>
-                <MDBNavbar color="" dark expand="md" id="navbar">
+            <div className="container-fluid">
+                <MDBNavbar  dark expand="md" id="navbar">
                     <MDBNavbarBrand>
                         <div id="contentlogo"><img src="" alt="logo" id="logo" /></div>
                     </MDBNavbarBrand>

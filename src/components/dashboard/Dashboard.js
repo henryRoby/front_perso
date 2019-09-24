@@ -5,8 +5,8 @@ import { logoutUser } from "../../actions/authActions";
 import PropAtelier from "../propAtelier/propAtelier";
 import Ajoutatelier from "../newAtelier/NewAtelier"
 import AjoutEleve from "../newAtelier/eleve"
-import AjoutPhoto from "../newAtelier/photo"
-//import Menu from "../design/menu/menu"
+//import AjoutPhoto from "../newAtelier/photo"
+import Menu from "../menu"
 import EleveList from "./listEleve"
 
  import { Link} from 'react-router-dom'
@@ -25,12 +25,12 @@ onLogoutClick = e => {
     return (
       
       <div>
-       
+       <Menu/>
       <div className="container-fluid" id="dash">
       <div className=" valign-wrapper">
         <div className="container-fluid">
-           <Link to="/Activiter" className="btn-flat waves-effect">
-              <i className="">Retour</i>
+           <Link to="/Activiter" className="fas fa-arrow-circle-left"> 
+              <i className="button">Retour</i>
           </Link>
         <div className="row">
           <div className="col-md-2">
@@ -86,11 +86,11 @@ onLogoutClick = e => {
           <PropAtelier/>
            <AjoutEleve/>
            <EleveList/>
-           <AjoutPhoto/>
+          
         </div>
          
         </div>
-       
+        
       </div>
       
       </div>

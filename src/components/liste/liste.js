@@ -25,9 +25,11 @@ export default class ListTout extends Component {
     }
 
     liste() {
-        return <div>
+        return <div className="container-fluid">
 
-                        <div id="hautList" className="container-fluid">Voir les activites</div>
+                        <div id="hautList" className="container-fluid">
+                        <center>Voir les activites</center> 
+                        </div>
 
                     <div className="container">
 
@@ -64,7 +66,7 @@ export default class ListTout extends Component {
                          </div>
                          <div id="barakely" className="col-md-4">
                                   <div  className="container-fluid">
-                                    <h2> ato le izy e</h2>
+                                    <h2> texte</h2>
                                     <p>
                                         Les enfants en tutelle sont tous issus de familles si démunies qu’elles ne peuvent plus assumer leurs enfants sans les mettre en danger. Les demandes de placement émanent le plus souvent directement des parents ou de membres proches de la famille ou des chefs de quartiers, ou de médecins ou de religieux connaissant très bien la famille. Parfois, ces demandes émanent d’autres centres d’accueil qui estiment que le Nid de Cigognes est plus adapté aux besoins des certains enfants qui leur ont été confiés.
 
