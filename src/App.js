@@ -22,6 +22,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import NewAtelier from "./components/newAtelier/NewAtelier";
 import Footer from "./components/footer";
 
+
 import "./App.css";
 
 // Check for token to keep user logged in
