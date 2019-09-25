@@ -5,9 +5,10 @@ import { logoutUser } from "../../actions/authActions";
 import PropAtelier from "../propAtelier/propAtelier";
 import Ajoutatelier from "../newAtelier/NewAtelier"
 import AjoutEleve from "../newAtelier/eleve"
-//import AjoutPhoto from "../newAtelier/photo"
+import AjoutPhoto from "../newAtelier/photo"
 import Menu from "../menu"
 import EleveList from "./listEleve"
+import PhotoList from "./listPhoto"
 
  import { Link} from 'react-router-dom'
 class Dashboard extends Component {
@@ -86,7 +87,8 @@ onLogoutClick = e => {
           <PropAtelier/>
            <AjoutEleve/>
            <EleveList/>
-          
+           <PhotoList/>
+          <AjoutPhoto/>
         </div>
          
         </div>

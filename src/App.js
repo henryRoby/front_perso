@@ -17,6 +17,7 @@ import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import Eleve from "./components/layout/eleve";
+import Photo from "./components/layout/photo";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import NewAtelier from "./components/newAtelier/NewAtelier";
@@ -72,9 +73,10 @@ class App extends Component {
             <Route exact path="/newAtelier" component={NewAtelier} />
             <Route exact path="/Activiter" component={ListTout} />
             <Route  path="/listeEleve" component={Eleve} />
+            <Route  path="/listePhoto" component={Photo} />
             <Route  path="/modifierEleve/:id" component={EditEleve} />
+
             <Switch>
-              
               <PrivateRoute exact path="/modifierAtl/:id" component={EditAtelier} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>
