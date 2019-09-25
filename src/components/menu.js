@@ -48,7 +48,7 @@ export default class Menu extends Component {
                             </MDBNavItem>
 
                             <MDBNavItem>
-                                <MDBNavLink to="/" className="nav-header">Nos photos</MDBNavLink>
+                                <MDBNavLink to="/listePhoto" className="nav-header">Nos photos</MDBNavLink>
                             </MDBNavItem>
 
                         </MDBNavbarNav>
