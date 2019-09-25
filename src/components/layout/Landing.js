@@ -18,7 +18,7 @@ class Landing extends Component {
           <div className ="row">
 			       <div className="col-md-6">
              <center>
-             <img id="image" src="http://www.ongzazakely.org/wp-content/uploads/2015/06/image-1-600x520.jpg" alt="image"/>
+             <img  className="responsive" src="http://www.ongzazakely.org/wp-content/uploads/2015/06/image-1-600x520.jpg" alt="image" />
              </center>
 			            
 			       </div>
@@ -61,7 +61,7 @@ class Landing extends Component {
               <div className= "container-fluid">
                    <div className="row">
                        <div className="col-md-6">
-                       <center><img id="image" alt='image' src="http://www.ongzazakely.org/wp-content/uploads/2015/07/IMAGE-10.jpg"/></center>
+                       <center><img className="responsive" alt='image' src="http://www.ongzazakely.org/wp-content/uploads/2015/07/IMAGE-10.jpg"/></center>
                            
                         </div>
 
@@ -109,7 +109,7 @@ class Landing extends Component {
 
                     <div className="row">
                         <div className="col-md-6">
-                        <center><img id="image" alt='image' src="http://www.ongzazakely.org/wp-content/uploads/2015/06/Nounou-et-enfant.jpg"/></center>
+                        <center><img className="responsive" alt='image' src="http://www.ongzazakely.org/wp-content/uploads/2015/06/Nounou-et-enfant.jpg"/></center>
                           
                         </div>
 
@@ -147,7 +147,7 @@ class Landing extends Component {
                    
                     <div className="row">
                         <div className="col-md-6">
-                        <center><img id="image" alt='image' src="http://www.ongzazakely.org/wp-content/uploads/2015/06/aide-aux-devoirs-600x450.jpg"/></center>
+                        <center><img className="responsive" alt='image' src="http://www.ongzazakely.org/wp-content/uploads/2015/06/aide-aux-devoirs-600x450.jpg"/></center>
                           
                         </div>
 
@@ -170,7 +170,7 @@ class Landing extends Component {
                  <div className="contenair-fluid">
                     <div className="row">
                         <div className="col-md-6">
-                        <center> <img id="image" alt='image' src="http://www.ongzazakely.org/wp-content/uploads/2015/06/Auxiliaire-de-vie-450x600.jpg"/></center>
+                        <center> <img className="responsive" alt='image' src="http://www.ongzazakely.org/wp-content/uploads/2015/06/Auxiliaire-de-vie-450x600.jpg"/></center>
                              
                         </div>
 
@@ -206,7 +206,7 @@ class Landing extends Component {
                     <div className="row">
                         <div className="col-md-6">
                         <center>
-                          <img id="image" alt='image' src="http://www.ongzazakely.org/wp-content/uploads/2015/06/Zo-et-Philo-600x424.jpg"/>
+                          <img className="responsive" alt='image' src="http://www.ongzazakely.org/wp-content/uploads/2015/06/Zo-et-Philo-600x424.jpg"/>
                         </center>
                           
                         </div>
