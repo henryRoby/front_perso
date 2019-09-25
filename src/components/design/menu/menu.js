@@ -65,7 +65,7 @@ export default class Menu extends Component {
                         </MDBNavbarNav>
                         <MDBNavbarNav right>
                             <MDBNavItem>
-                                <MDBNavLink to="/login" className="nav-header" rounded onClick={this.toggle(1)}></MDBNavLink>
+                                <MDBNavLink to="/login" className="nav-header" rounded onClick={this.toggle(1)}>se connecter</MDBNavLink>
                             </MDBNavItem>
                         </MDBNavbarNav>
                     </MDBCollapse>
