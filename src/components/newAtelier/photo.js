@@ -23,12 +23,12 @@ handleUploadImage(ev) {
   const data = new FormData();
   data.append('image', this.uploadInput.files[0]);
  
-  fetch('http://localhost:8080/api/users/newPhoto/',{
+  fetch('https://perso-back.herokuapp.com/api/users/newPhoto/',{
     method: 'POST',
     body: data,
   }).then((response) => {
     response.json().then((body) => {
-      this.setState({ image: `http://localhost:8080/api/users/newPhoto/${body.image}`});
+      this.setState({ image: `https://perso-back.herokuapp.com/api/users/newPhoto/${body.image}`});
       console.log("mandeh am'zay ranga", body.image);
 
     });

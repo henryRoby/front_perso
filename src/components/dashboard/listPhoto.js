@@ -15,7 +15,7 @@ export default class PropAtelier extends Component {
     
 
     componentDidMount() {
-        axios.get(`http://localhost:8080/api/users/newPhoto`)
+        axios.get(`https://perso-back.herokuapp.com/api/users/newPhoto`)
             .then(response => {
                 console.log('user-article ==== ', response.data)
                 this.setState({ profil: response.data });
@@ -39,14 +39,14 @@ export default class PropAtelier extends Component {
         
 
                             <center >
-                                <img width="200px" height="140px" src={'http://localhost:8080/api/users/newPhotoImage/' + obj.image} alt="pdp" />  
+                                <img width="200px" height="140px" src={'https://perso-back.herokuapp.com/api/users/newPhotoImage/' + obj.image} alt="pdp" />  
                             </center>
                             
                             <p>
                 
                                 <button  class="btn btn-danger" onClick={(e)=>{
                                    // e.preventefault()
-                                    axios.delete("http://localhost:8080/api/users/delete/"+ obj._id)
+                                    axios.delete("https://perso-back.herokuapp.com/api/users/delete/"+ obj._id)
                                     .then(
                                         console.log("suppression photo avec succes"),
                                         console.log(obj._id)
