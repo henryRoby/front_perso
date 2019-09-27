@@ -15,7 +15,7 @@ export default class PropAtelier extends Component {
     
 
     componentDidMount() {
-        axios.get(`http://localhost:8080/api/users/newPhoto`)
+        axios.get(`https://perso-back.herokuapp.com/api/users/newPhoto`)
             .then(response => {
                 console.log('user-article ==== ', response.data)
                 this.setState({ profil: response.data });
