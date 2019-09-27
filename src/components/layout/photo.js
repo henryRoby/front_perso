@@ -39,7 +39,7 @@ export default class PropAtelier extends Component {
 
                         return <div key={obj._id} className="item col-xs-3 col-lg-3" id="suivi">
                             <center >
-                                <img width="290px" height="220px" src={'http://localhost:8080/api/users/newPhotoImage/' + obj.image} alt="pdp" />    
+                                <img width="290px" height="220px" src={'https://perso-back.herokuapp.com/api/users/newPhotoImage/' + obj.image} alt="pdp" />    
                             </center>
                         </div>
 
